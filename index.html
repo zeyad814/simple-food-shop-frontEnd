@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawsame  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- aos  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="bg-black">
+    <!-- start nav bar  -->
+
+    <div class="container mx-auto">
+      <nav class="flex flex-row">
+        <div class="flex fixed top-0 left-0 bottom-0 z-50">
+          <div
+            class="w-64 bg-black h-screen hidden transition duration-1000 ease-in-out"
+            id="togglenav"
+          >
+            <ul class="text-center py-10 bg-red-700 ullinks overflow-hidden">
+              <li class="relative">
+                <a
+                  data-aos="fade-up"
+                  onclick="displaysearc()"
+                  href="#"
+                  class="block text-gray-300 hover:bg-gray-700 hover:text-white px-4 py-2 rounded"
+                  >Search</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  onclick=" displayCategoroy() "
+                  data-aos="fade-right"
+                  href="#"
+                  class="block text-gray-300 hover:bg-gray-700 hover:text-white px-4 py-2 rounded"
+                  >Categories</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  onclick="getApiArea(`canadian`);
+ "
+                  href="#"
+                  class="block text-gray-300 hover:bg-gray-700 hover:text-white px-4 py-2 rounded"
+                  >Area</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="#"
+                  class="block text-gray-300 hover:bg-gray-700 hover:text-white px-4 py-2 rounded"
+                  >Ingredients</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  id="contactUs"
+                  href="#"
+                  onclick="displayContactUS()"
+                  class="block text-gray-300 hover:bg-gray-700 hover:text-white px-4 py-2 rounded"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <div>
+              <ul class="flex justify-center mt-36">
+                <li
+                  class="bg-blue-200 rounded-full w-8 h-8 text-center flex items-center justify-center mx-2"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li
+                  class="bg-blue-200 rounded-full w-8 h-8 text-center flex items-center justify-center mx-2"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li
+                  class="bg-blue-200 rounded-full w-8 h-8 text-center flex items-center justify-center mx-2"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </li>
+              </ul>
+              <p class="text-white text-center mt-5">
+                Copyright Â© 2019 All Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-10 bg-blue-900 h-screen flex justify-center items-center"
+          >
+            <div
+              class="bg-green-700 hover:bg-gray-700 rounded-full p-2 transition duration-300 ease-in-out hover:cursor-pointer"
+              id="iconNave"
+            >
+              <i class="fas fa-bars text-white"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container mx-auto" id="search"></div>
+      <div class="flex flex-wrap" id="cartonasearch"></div>
+      <section id="categorythiddin">
+        <div class="container mx-auto p-16" id="rowSearch"></div>
+      </section>
+    </div>
+
+    <!-- start nav bar  -->
+
+    <!-- <form>
+      Email: <input type="text" name="email" id="email" />
+      <input type="button" value="submit" onclick="validate()" />
+    </form> -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <!-- aos  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
