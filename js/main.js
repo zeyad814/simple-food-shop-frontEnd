@@ -42,9 +42,7 @@ function displaySearch(arraySarch) {
      <img class=" w-80 px-4 md:py-5 rounded-3xl" src="${arraySarch[i].strMealThumb}" alt="" />
            <div class="layer">
            <h1 class="flex justify-center items-center h-80 text-black font-bold text-3xl ">${arraySarch[i].strMeal}</h1>
-</div>
-
-    
+</div>    
         </div>`;
   }
   cartonasearch.innerHTML = cartona;
@@ -62,10 +60,6 @@ async function getApiCategory() {
   arrcategory = finalResponseCategory.categories;
 }
 
-function newFeature()
-{
-  return "test";
-}
 
 function displayCategoroy() {
   let cartonaCategroy = "";
