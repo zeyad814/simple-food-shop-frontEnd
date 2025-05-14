@@ -60,7 +60,10 @@ async function getApiCategory() {
   arrcategory = finalResponseCategory.categories;
 }
 
-
+functuion newUrgentFeature()
+{
+  return "pull";
+}
 function displayCategoroy() {
   let cartonaCategroy = "";
   for (let i = 0; i < arrcategory.length; i++) {
