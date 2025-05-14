@@ -196,6 +196,11 @@ async function getApiArea(area) {
   displayArea(finalresponseArea.meals); // عرض البيانات بعد جلبها
 }
 
+function newUrgentFeature()
+{
+  return "test";
+}
+
 function displayArea(meals) {
   let cartonaArea = "";
   for (let i = 0; i < meals.length; i++) {
