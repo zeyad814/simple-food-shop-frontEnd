@@ -62,6 +62,11 @@ async function getApiCategory() {
   arrcategory = finalResponseCategory.categories;
 }
 
+function newFeature()
+{
+  return "test";
+}
+
 function displayCategoroy() {
   let cartonaCategroy = "";
   for (let i = 0; i < arrcategory.length; i++) {
